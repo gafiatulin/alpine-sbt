@@ -7,7 +7,7 @@ ENV PATH ${PATH}:${SBT_HOME}/bin
 # Install sbt
 RUN apk add --update curl bash && \
     curl -sL "http://dl.bintray.com/sbt/native-packages/sbt/$SBT_VERSION/sbt-$SBT_VERSION.tgz" | gunzip | tar -x -C /usr/local && \
-    apk del curl bash && \
+    apk del curl && \
     rm -rf /var/cache/apk/* && \
     echo -ne "- with sbt $SBT_VERSION\n" >> /root/.built
 
