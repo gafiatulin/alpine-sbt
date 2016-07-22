@@ -1,6 +1,6 @@
 FROM java:jre-alpine
 
-ENV SBT_VERSION 0.13.11
+ENV SBT_VERSION 0.13.12
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
 
