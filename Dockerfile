@@ -1,4 +1,4 @@
-FROM java:jre-alpine
+FROM openjdk:jre-alpine
 
 ENV SBT_VERSION 0.13.12
 ENV SBT_HOME /usr/local/sbt
